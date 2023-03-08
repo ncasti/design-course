@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Design Sense Crash Course</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Design Sense Crash Course</h1>
+  <h2>Learn about Duolingo's design principles</h2>
+
+  <!-- add a div for lesson contaienr -->
+  <div class="lesson-container">
+    <div class="lesson" id="lesson-0-container">
+      <h3>Lesson 0</h3>
+      <p>Introduction</p>
+    </div>
+    <div class="lesson" id="lesson-1-container">
+      <h3>Lesson 1</h3>
+      <p>Make features self-explanatory</p>
+    </div>
+    <div class="lesson" id="lesson-2-container">
+      <h3>Lesson 2</h3>
+      <p>Consistency and Design Conventions</p>
+
+    </div>
+    <div class="lesson" id="lesson-3-container">
+      <h3>Lesson 3</h3>
+      <p>Simplicity</p>
+    </div>
+    <div class="lesson" id="lesson-4-container">
+      <h3>Lesson 4</h3>
+      <p>Preventing User Error</p>
+    </div>
+    <div class="lesson" id="lesson-5-container">
+      <h3>Lesson 5</h3>
+      <p>Visibility of System Status</p>
+    </div>
+    <div class="lesson" id="lesson-6-container">
+      <h3>Lesson 6</h3>
+      <p>Hierarchy</p>
+    </div>
+    <div class="lesson" id="lesson-7-container">
+      <h3>Lesson 7</h3> 
+      <p>Bonus: User Psychology</p>
+    </div>
+  </div>
+</body>
+
+<!-- script so that when someone clicks on a lesson div, we take them to the corresponding lesson html (e.g. lesson-1.html) -->
+<script>
+  var lesson0 = document.getElementById("lesson-0-container");
+  var lesson1 = document.getElementById("lesson-1-container");
+  var lesson2 = document.getElementById("lesson-2-container");
+  var lesson3 = document.getElementById("lesson-3-container");
+  var lesson4 = document.getElementById("lesson-4-container");
+  var lesson5 = document.getElementById("lesson-5-container");
+  var lesson6 = document.getElementById("lesson-6-container");
+  var lesson7 = document.getElementById("lesson-7-container");
+  
+  lesson0.addEventListener("click", function() {
+    window.location.href = "lesson-0.html";
+  });
+  lesson1.addEventListener("click", function() {
+    window.location.href = "lesson-1.html";
+  });
+  lesson2.addEventListener("click", function() {
+    window.location.href = "lesson-2.html";
+  });
+  lesson3.addEventListener("click", function() {
+    window.location.href = "lesson-3.html";
+  });
+  lesson4.addEventListener("click", function() {
+    window.location.href = "lesson-4.html";
+  });
+  lesson5.addEventListener("click", function() {
+    window.location.href = "lesson-5.html";
+  });
+  lesson6.addEventListener("click", function() {
+    window.location.href = "lesson-6.html";
+  });
+  lesson7.addEventListener("click", function() {
+    window.location.href = "lesson-7.html";
+  });
+
+// cookie to remember if someone clicked on a lesson div
+  var lesson0Clicked = false;  
+  var lesson1Clicked = false;
+  var lesson2Clicked = false;
+  var lesson3Clicked = false;
+  var lesson4Clicked = false;
+  var lesson5Clicked = false;
+  var lesson6Clicked = false;
+  var lesson7Clicked = false;
+  
+  lesson0.addEventListener("click", function() {
+    lesson0Clicked = true;
+    document.cookie = "lesson1Clicked=" + lesson1Clicked;
+  });
+  lesson1.addEventListener("click", function() {
+    lesson1Clicked = true;
+    document.cookie = "lesson1Clicked=" + lesson1Clicked;
+  });
+  lesson2.addEventListener("click", function() {
+    lesson2Clicked = true;
+    document.cookie = "lesson2Clicked=" + lesson2Clicked;
+  });
+  lesson3.addEventListener("click", function() {
+    lesson3Clicked = true;
+    document.cookie = "lesson3Clicked=" + lesson3Clicked;
+  });
+  lesson4.addEventListener("click", function() {
+    lesson4Clicked = true;
+    document.cookie = "lesson4Clicked=" + lesson4Clicked;
+  });
+  lesson5.addEventListener("click", function() {
+    lesson5Clicked = true;
+    document.cookie = "lesson5Clicked=" + lesson5Clicked;
+  });
+  lesson6.addEventListener("click", function() {
+    lesson6Clicked = true;
+    document.cookie = "lesson6Clicked=" + lesson6Clicked;
+  });
+  lesson7.addEventListener("click", function() {
+    lesson7Clicked = true;
+    document.cookie = "lesson7Clicked=" + lesson7Clicked;
+  });
+
+
+</script>
+
+</html>
