@@ -6,26 +6,33 @@
   <meta name="viewport" content="width=device-width">
   <title>Design Sense Crash Course</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/57262adca2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 <!-- top navigation bar with a back button icon -->
-  <div class="top-nav">
+  <div class="top-nav, lesson-paragraph">
     <a href="index.html" class="back-button">
-      <img src="back-button.png" alt="back button">
+      <i class="fa-solid fa-house"></i>
     </a>
   </div>
-
-  <h1>Lesson 4</h1>
-  <h2>Preventing User Error</h2>
+  <h1>Lesson 4: Keep things simple</h1>
+  <b><p class= "lesson-paragraph" style="text-align: center";>Reduce optionality and only implement the most critical features.</p></b>
+  <br>
   <p class ="lesson-paragraph">
-    When designing mobile apps, it's important to anticipate and prevent user errors as much as possible.
+    At Duolingo, we try to keep things simple and focus only on the most essential features, so that users are not overwhelmed or distracted by unnecessary information. Simplicity is another tool to reduce cognitive load for our learners, freeing up precious mental energy for learning new skills instead.
     <br><br>
-    One way that designers can prevent user errors is by making it difficult or impossible for users to make mistakes in the first place. For example, in a shopping app that requires users to select a delivery date, you may choose to use a calendar picker instead of a text field. This way, users won't be able to enter an invalid date, which could lead to delays or missed deliveries. By using a calendar picker, the designer is preventing user error before it happens.
+    In addition to helping users focus on the task at hand, simplicity also gives apps a polished and delightful feel.
+    <img src="assets/content-examples/instagram-old.jpeg">
+    One result of not following the principle of simplicity is <b>feature creep</b>. Feature creep happens when teams keep adding new features to satisfy a specific business or user need, often at the expense of the overall user experience. As more and more features are added over time, users may end up having a hard time finding what they need.
+    <br><br>
+    One example of an app that has suffered from feature creep is Facebook. Over the years, Facebook added so many features that the app became quite cluttered and difficult to navigate. For example, the navigation bar includes options for the news feed, stories, groups, marketplace, pages, among other features. With so many options, users may have a hard time finding what they're looking for. Additionally, users are bombarded with notifications and tab badges, which can further distract them from the content they want to see.
+    <img src="assets/content-examples/facebook.jpeg">
+    By pursuing simplicity in feature creation, you're doing more than just streamlining the user experience. You're also reducing operational overhead by making features easier to QA, maintain, and port. This frees up valuable resources for Duolingo to further its mission of making education accessible to everyone.
   </p>
 
   <!-- continue button -->
-  <a href="lesson-5.html" class="continue-button">CONTINUE</a>
+  <a href="lesson-4-2.html" class="continue-button">CONTINUE</a>
 </body>
 
 </html>

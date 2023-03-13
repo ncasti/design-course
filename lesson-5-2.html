@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Design Sense Crash Course</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/57262adca2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- top navigation bar with a back button icon -->
+  <div class="top-nav, lesson-paragraph">
+    <a href="index.html" class="back-button">
+      <i class="fa-solid fa-house"></i>
+    </a>
+  </div>
+  <h1>Lesson 5: Prevent user error</h1>
+  <h2>Force functions</h2>
+  <br>
+  <p class ="lesson-paragraph">
+    One way that designers can prevent user errors is by making it difficult or impossible for users to make mistakes in the first place. For example, Airbnb requires users to choose a trip dates, and designers chose to use a calendar picker instead of text field input. This way, users won't be able to enter an invalid date, which could result in a cumbersome user experience. By using a calendar picker, the designer is preventing user error before it happens.
+    <img style="max-width: 300px;" src="assets/content-examples/airbnb.png">
+    Duolingo lessons also use force functions to prevent slips. For example, we know that learners are prone to accidentally double-tapping the continue button when doing a lesson. To prevent them from submitting empty responses, after the learner taps the continue button in the grading ribbon, we immediately disable it and only re-enable it once the learner has started their response. This way, users won't accidentally skip an exercise.
+    <img src="assets/content-examples/disabled-button.png" style="max-width: 350px">
+    Duolingo used to have an exercise that asked users to "select all correct translations." However, many learners wouldn't read the instructions and would only select one translation. We attempted to solve this problem by underlining the word "all" in the instructions, hoping this would make it more clear to users. Unfortunately, A/B testing revealed that this change didn't help. Because we couldn't find a force function to prevent user error, we ended up discontinuing the exercise altogether.
+    <img src="assets/content-examples/select-all.png" style="max-width: 300px">
+  </p>
+
+  <!-- continue button -->
+  <a href="lesson-5-3.html" class="continue-button">CONTINUE</a>
+  <a href="lesson-5-2.html" class="go-back-button">BACK</a>
+</body>
+
+</html>
